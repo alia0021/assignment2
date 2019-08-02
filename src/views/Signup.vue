@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>State Manager</h1>
-    <h2>Sign Up</h2>
+    <h2>Signup</h2>
     <div class="card">
       <div class="card-body">
         <form @submit.prevent="onSubmit">
