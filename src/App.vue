@@ -1,29 +1,9 @@
 <template>
-  <div id="app" class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <h1>State Manager</h1>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <router-link tag="li" class="nav-item" activeClass="active" to="/">
-            <a class="nav-link">Home</a>
-          </router-link>
-          <router-link tag="li" class="nav-item" activeClass="active" :to="{ name: 'dashboard' }">
-            <a class="nav-link">Dashboard</a>
-          </router-link>
-        </ul>
-      </div>
-    </nav>
+  <div id="app">
+    <div id="nav">
+      <router-link :to="{name: 'signup'}">Signup</router-link>|
+      <router-link :to="{name: 'dashboard'}">Dashboard</router-link>
+    </div>
     <router-view />
   </div>
 </template>
@@ -33,4 +13,13 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 export default {};
 </script>
 
-<style></style>
+<style>
+#app {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+#nav {
+  padding: 30px;
+}
+</style>

@@ -11,20 +11,13 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Signup
-    },
-    {
-      path: "/signup",
       name: "signup",
       component: Signup
     },
-
     {
       path: "/dashboard",
       name: "dashboard",
-      component: Dashboard,
-      props: true
+      component: Dashboard
     }
   ]
 });
